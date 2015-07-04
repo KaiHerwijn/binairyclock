@@ -1,6 +1,4 @@
-var time = new Time();
+counter = new Counter();
 
-$(document).ready(function() 
-{
-	$("#clock").html(time.getSecondsAfterMidnight());
-});
+$(document).on("click", "#step", function(){counter.step();});
+
