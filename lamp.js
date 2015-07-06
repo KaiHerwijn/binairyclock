@@ -38,16 +38,26 @@ function Lamp(order)
 	self.draw = function()
 	{
 		var lam = $("#"+order);
-		if (lam.hasClass("aan"))
-		{
-			lam.removeClass("aan");
-			lam.addClass("uit");
-		}
-		else
+		if (self.isOn)
 		{
 			lam.removeClass("uit");
 			lam.addClass("aan");
 		}
+		else
+		{
+			lam.removeClass("aan");
+			lam.addClass("uit");
+		}
+	}
+
+	self.clear = function()
+	{
+		self.isOn = false;
+		if (self.next != undefined)
+		{
+			self.next.clear();
+		}
+		self.draw();
 	}
 
 	self.init(order);

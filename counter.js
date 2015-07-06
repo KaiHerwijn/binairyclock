@@ -8,4 +8,9 @@ function Counter()
 	{
 		self.startLamp.switch();
 	}
+
+	self.clear = function()
+	{
+		self.startLamp.clear();
+	}
 }
