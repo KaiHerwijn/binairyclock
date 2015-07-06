@@ -1,7 +1,7 @@
 function Counter()
 {
 	var self = this;
-	self.startLamp = new Lamp(8);
+	self.startLamp = new Lamp(16);
 
 
 	self.step = function()

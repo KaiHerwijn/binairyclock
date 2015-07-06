@@ -20,7 +20,8 @@
 	background-color: darkgray;
 }
 
-#clock
+#counter
 {
 	clear: both;
+	max-width: 124px;
 }
